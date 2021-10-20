@@ -2,8 +2,14 @@ const inquirer = require('inquirer');
 const path = require('path');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
+const { resolve } = require('path');
 
 const questions = [
+    {
+        tyep: 'input',
+        name: 'name',
+        message: 'what is your name?'
+    },
     {
         type:'input',
         name:'github',
@@ -25,16 +31,47 @@ const questions = [
        message: 'please write a short description of your project'
      },
      {
-         tyep: 'list',
-         name: 'license',
-         message: 'what kind of license should your project have?',
-         choices:['MIT','APACHE 2.0','GPL 3.0', 'None']
+         type: 'input',
+         name: 'book',
+         message: 'what is your favorite book?'
+     },
+     {
+        type: 'checkbox',
+        name: 'license',
+        message: 'what kind of license should your project have?',
+        choices:['MIT','APACHE-2.0','GPL-3.0', 'None']
      },
     
 ]   
 
-function startApplication() {
-    inquirer.prompt(questions)
+const writeToFile = pageMD => {
+    return new Promise((resolve, reject)=> {
+        fs.writeFile('./dist/README.md', pageMD, err => {
+            if(err) {
+                reject(err)
+                return;
+            }
+            resolve({
+                ok: true,
+                message: 'README file created!'
+            })
+        })
+    })
 }
 
-startApplication();
+function startApplication() {
+    inquirer.prompt(questions).then(data => {
+        return generateMarkdown(data);
+    })
+    .then(pageMD => {
+        return writeToFile(pageMD)
+    })
+    .then(writeFileResponse => {
+        console.log(writeFileResponse.message)
+    })
+    .catch(err => {
+        console.log(err);
+    });
+}
+
+startApplication()
