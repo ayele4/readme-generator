@@ -31,6 +31,11 @@ const questions = [
        message: 'please write a short description of your project'
      },
      {
+        type: 'input',
+        name: 'installation',
+        message: 'how would you install this application?'
+     },
+     {
          type: 'input',
          name: 'book',
          message: 'what is your favorite book?'

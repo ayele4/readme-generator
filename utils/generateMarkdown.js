@@ -26,15 +26,32 @@ ${description}
 ## Table of Contents
 
 * [Installation](#installation)
+* [Usage](#usage)
 * [Questions](#questions)
 * [License](#license)
+* [Contributing](#contributing)
+* [Testes](#tests)
+
+## Installation
+
+${installation}
+
+## Usage
+
+${usage}
 
 ## License
+
 ${generateLicense(license)}
 
+
 ## Questions
-${email} ${github}
-`
+
+Contact Information for questions: \n
+
+GitHub: [${username}] (https://www.github.com/${username}) \n
+E-mail: ${email}
+`;
 }
 
 module.exports = generateMarkdown;
