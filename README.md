@@ -4,12 +4,12 @@
 
 # Table of contents
 
-Installation
-Usage
-License
-Contributing
-Tests
-Questions
+* Installation
+* Usage
+* License
+* Contributing
+* Tests
+* Questions
 
 # Installation
 run 'npm i' in the command line to install all the necessary independencise.
@@ -21,7 +21,7 @@ MIT
 # Contributing
 Ayele lintamo 
 # Technologies Used
-Screencastify
-GitHub
-JavaScript
-Terminal
+* Screencastify
+* GitHub
+* JavaScript
+* Terminal
