@@ -14,7 +14,7 @@ const generateLicense = license => {
 }
 
 function generateMarkdown(data) {
-    const {title, email, github, description, license} = data;
+    const {title, email, installation, usage, username, description, license} = data;
     return `
 ${generateBadges(license)}
 # ${title}
