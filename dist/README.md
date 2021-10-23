@@ -18,4 +18,4 @@ This creates a professional README
 * GPL-3.0
 
 ## Questions
-mail@mail.com README Generator
+lashaaye@gmail.com README Generator
