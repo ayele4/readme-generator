@@ -19,9 +19,13 @@ The project for the week was to create a backend application that generates a pr
 run 'npm i' in the command line to install all the necessary independencise.
 # Usage
 Download the application and run the installation process. In the command line run 'node index' and answer all the provided prompts. Once all the prompts have been answered the readme will be generated inside of the 'dist' directory!
+# Video walk through
 
+https://drive.google.com/file/d/1qJHKtkyLaOFx_wu1ISBXWnW77_XWZKTA/view?usp=sharing
 # Licenses
+
 MIT
+
 # Contributing
 Ayele lintamo 
 # Technologies Used
