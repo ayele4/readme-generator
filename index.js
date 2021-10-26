@@ -46,6 +46,16 @@ const questions = [
         message: 'what kind of license should your project have?',
         choices:['MIT','APACHE-2.0','GPL-3.0', 'None']
      },
+     {
+         type: 'input',
+         name: 'contributing',
+         message: 'add any contributors for this project'
+     },
+     {
+         type: 'input',
+         name: 'test',
+         message: 'how would you ran a test'
+     },
     
 ]   
 
