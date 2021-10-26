@@ -6,7 +6,7 @@ The project for the week was to create a backend application that generates a pr
 
 
 
-# Table of contents
+## Table of contents
 
 * Installation
 * Usage
