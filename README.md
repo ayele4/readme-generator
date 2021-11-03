@@ -8,12 +8,12 @@ The project for the week was to create a backend application that generates a pr
 
 ## Table of contents
 
-* Installation
-* Usage
-* License
-* Contributing
-* Tests
-* Questions
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 # Installation
 run 'npm i' in the command line to install all the necessary independencise.
