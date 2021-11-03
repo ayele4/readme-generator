@@ -1,3 +1,4 @@
+![License](https://img.shields.io/static/v1?label=License&message=MIT&color=BLUE)
 # Readme-generator
 
 # Description
